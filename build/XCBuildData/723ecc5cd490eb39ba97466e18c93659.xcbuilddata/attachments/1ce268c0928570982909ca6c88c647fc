@@ -1,0 +1,28 @@
+{
+  "" : {
+    "diagnostics" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests-master.dia",
+    "emit-module-dependencies" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests-master.swiftdeps"
+  },
+  "/Users/fukutsukayamato/Desktop/InspectorAI/InspectorAIUITests/InspectorAIUITests.swift" : {
+    "const-values" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests.swiftconstvalues",
+    "dependencies" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests.d",
+    "diagnostics" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests.dia",
+    "index-unit-output-path" : "/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests.o",
+    "llvm-bc" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests.bc",
+    "object" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests.o",
+    "swift-dependencies" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests.swiftdeps",
+    "swiftmodule" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITests~partial.swiftmodule"
+  },
+  "/Users/fukutsukayamato/Desktop/InspectorAI/InspectorAIUITests/InspectorAIUITestsLaunchTests.swift" : {
+    "const-values" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITestsLaunchTests.swiftconstvalues",
+    "dependencies" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITestsLaunchTests.d",
+    "diagnostics" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITestsLaunchTests.dia",
+    "index-unit-output-path" : "/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITestsLaunchTests.o",
+    "llvm-bc" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITestsLaunchTests.bc",
+    "object" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITestsLaunchTests.o",
+    "swift-dependencies" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITestsLaunchTests.swiftdeps",
+    "swiftmodule" : "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAIUITests.build/Objects-normal/arm64/InspectorAIUITestsLaunchTests~partial.swiftmodule"
+  }
+}

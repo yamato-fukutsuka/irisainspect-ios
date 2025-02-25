@@ -1,0 +1,115 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-inspectorai-dev-ad97b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::794038225687:role/amplify-inspectorai-dev-ad97b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::794038225687:role/amplify-inspectorai-dev-ad97b-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-inspectorai-dev-ad97b-deployment",
+      "UnauthRoleName": "amplify-inspectorai-dev-ad97b-unauthRole",
+      "StackName": "amplify-inspectorai-dev-ad97b",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:794038225687:stack/amplify-inspectorai-dev-ad97b/e5b8c1c0-ef44-11ef-9d7a-0e9c4d8e0beb",
+      "AmplifyAppId": "dwovx2hj6n34i"
+    }
+  },
+  "auth": {
+    "inspectorai0d687996": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-inspectorai-dev-ad97b-deployment/amplify-cfn-templates/auth/inspectorai0d687996-cloudformation-template.json",
+        "logicalId": "authinspectorai0d687996"
+      },
+      "lastPushTimeStamp": "2025-02-21T05:04:28.111Z",
+      "output": {
+        "UserPoolId": "ap-northeast-1_20TN2w59r",
+        "AppClientIDWeb": "4krci90mt07din2jeorgj7fvpc",
+        "AppClientID": "3sn426f5muhrq618pk6papmuu0",
+        "IdentityPoolId": "ap-northeast-1:4c925431-ce54-49b3-974e-5bc1267ffa60",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-1:794038225687:userpool/ap-northeast-1_20TN2w59r",
+        "IdentityPoolName": "inspectorai0d687996_identitypool_0d687996__dev",
+        "UserPoolName": "inspectorai0d687996_userpool_0d687996"
+      },
+      "lastPushDirHash": "KUdtcPUQI6z8tvCbOs/WG0H3ToQ="
+    }
+  },
+  "api": {
+    "inspectorai": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "inspectorai0d687996",
+          "attributes": [
+            "UserPoolId"
+          ]
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authinspectorai0d687996"
+              }
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "t5ptqtpigvhbnbiuu5cuklwwty",
+        "GraphQLAPIEndpointOutput": "https://rrur3s5zxbenpi2rgvrmr46pra.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-ly2oc26ynzhkxfdzc4l2xypymm"
+      },
+      "lastPushTimeStamp": "2025-02-21T05:04:32.726Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-inspectorai-dev-ad97b-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiinspectorai"
+      },
+      "lastPushDirHash": "DV4V0H16tkuyzLeojWHlxggykwQ="
+    }
+  },
+  "storage": {
+    "InspectorAIContent": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2025-02-21T05:04:28.129Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-inspectorai-dev-ad97b-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageInspectorAIContent"
+      },
+      "output": {
+        "BucketName": "inspectorai-bucketad97b-dev",
+        "Region": "ap-northeast-1"
+      },
+      "lastPushDirHash": "8F5ZBi1MI4/FAJcnX0oU2aNY+EM="
+    }
+  }
+}

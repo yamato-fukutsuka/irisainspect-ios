@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		456973DD2D66D1840063A328 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 456973DC2D66D1840063A328 /* ZIPFoundation */; };
+		45A954B02D66CC3800AF238E /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954AF2D66CC3800AF238E /* AWSAPIPlugin */; };
+		45A954B22D66CC3800AF238E /* AWSCloudWatchLoggingPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954B12D66CC3800AF238E /* AWSCloudWatchLoggingPlugin */; };
+		45A954B42D66CC3800AF238E /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954B32D66CC3800AF238E /* AWSCognitoAuthPlugin */; };
+		45A954B62D66CC3800AF238E /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954B52D66CC3800AF238E /* AWSDataStorePlugin */; };
+		45A954B82D66CC3800AF238E /* AWSLocationGeoPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954B72D66CC3800AF238E /* AWSLocationGeoPlugin */; };
+		45A954BA2D66CC3800AF238E /* AWSPinpointAnalyticsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954B92D66CC3800AF238E /* AWSPinpointAnalyticsPlugin */; };
+		45A954BC2D66CC3800AF238E /* AWSPinpointPushNotificationsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954BB2D66CC3800AF238E /* AWSPinpointPushNotificationsPlugin */; };
+		45A954BE2D66CC3800AF238E /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954BD2D66CC3800AF238E /* AWSPluginsCore */; };
+		45A954C02D66CC3800AF238E /* AWSPredictionsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954BF2D66CC3800AF238E /* AWSPredictionsPlugin */; };
+		45A954C22D66CC3800AF238E /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954C12D66CC3800AF238E /* AWSS3StoragePlugin */; };
+		45A954C42D66CC3800AF238E /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954C32D66CC3800AF238E /* Amplify */; };
+		45A954C62D66CC3800AF238E /* CoreMLPredictionsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 45A954C52D66CC3800AF238E /* CoreMLPredictionsPlugin */; };
+		45F61EB12D5605EB00115BC2 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F61EB02D5605EB00115BC2 /* ARKit.framework */; };
+		45F61EB32D5605FF00115BC2 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F61EB22D5605FF00115BC2 /* CoreML.framework */; };
+		45F61EB52D56060C00115BC2 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F61EB42D56060C00115BC2 /* Vision.framework */; };
+		81C7C36DB87DFCE1D2ACC996 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEA54ADF702B188BE13626 /* awsconfiguration.json */; };
+		8DCFCB6E89A512C2EC898A2C /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = CD42A4AC9278635017E8FD2C /* amplifyconfiguration.json */; };
+		93585DBFAFE7892FD674FC39 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633AA0CC095BA285AD04B307 /* Message+Schema.swift */; };
+		ABD8C19B72E121138506FE18 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886ECCB584F81AB412301446 /* Project.swift */; };
+		B8F007DB639E4832B5626B53 /* ChatLog+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C0103692D27784CC35F205 /* ChatLog+Schema.swift */; };
+		C7550FD7CDAC0A6264BA5CC7 /* ChatLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A524792C760D606EA2D5F04 /* ChatLog.swift */; };
+		E493FEEBB55EC3FFB36E2A6B /* Project+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC47B62548406DF394B2235 /* Project+Schema.swift */; };
+		E83F7FEB6426CFAB1FD978CD /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74699B13CD0C46071DFE2A /* AmplifyModels.swift */; };
+		F0FECE21AA803EE09F62B273 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B312598AA162D87AA58D6C95 /* Message.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45A953942D5AF83900AF238E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45F61E7A2D5603D700115BC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45F61E812D5603D700115BC2;
+			remoteInfo = InspectorAI;
+		};
+		45F61E932D5603D900115BC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45F61E7A2D5603D700115BC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45F61E812D5603D700115BC2;
+			remoteInfo = InspectorAI;
+		};
+		45F61E9D2D5603D900115BC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45F61E7A2D5603D700115BC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45F61E812D5603D700115BC2;
+			remoteInfo = InspectorAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A524792C760D606EA2D5F04 /* ChatLog.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = ChatLog.swift; path = amplify/generated/models/ChatLog.swift; sourceTree = "<group>"; };
+		3ADEA54ADF702B188BE13626 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		45A953902D5AF83900AF238E /* InspectorAITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InspectorAITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F61E822D5603D700115BC2 /* InspectorAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InspectorAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F61E922D5603D900115BC2 /* InspectorAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InspectorAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F61E9C2D5603D900115BC2 /* InspectorAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InspectorAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F61EB02D5605EB00115BC2 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		45F61EB22D5605FF00115BC2 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		45F61EB42D56060C00115BC2 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		633AA0CC095BA285AD04B307 /* Message+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Message+Schema.swift"; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; };
+		6BC47B62548406DF394B2235 /* Project+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Project+Schema.swift"; path = "amplify/generated/models/Project+Schema.swift"; sourceTree = "<group>"; };
+		886ECCB584F81AB412301446 /* Project.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Project.swift; path = amplify/generated/models/Project.swift; sourceTree = "<group>"; };
+		8E74699B13CD0C46071DFE2A /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		A4C0103692D27784CC35F205 /* ChatLog+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "ChatLog+Schema.swift"; path = "amplify/generated/models/ChatLog+Schema.swift"; sourceTree = "<group>"; };
+		B312598AA162D87AA58D6C95 /* Message.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Message.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
+		CD42A4AC9278635017E8FD2C /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		456975A62D6814B30063A328 /* Exceptions for "InspectorAI" folder in "InspectorAI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"amplify/backend/amplify-meta.json",
+				"amplify/backend/awscloudformation/build/root-cloudformation-stack.json",
+				amplify/backend/tags.json,
+				"amplify/hooks/pre-push.js.sample",
+				amplify/README.md,
+				amplifyconfiguration.json,
+				awsconfiguration.json,
+			);
+			target = 45F61E812D5603D700115BC2 /* InspectorAI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		45F61E842D5603D700115BC2 /* InspectorAI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				456975A62D6814B30063A328 /* Exceptions for "InspectorAI" folder in "InspectorAI" target */,
+			);
+			path = InspectorAI;
+			sourceTree = "<group>";
+		};
+		45F61E9F2D5603D900115BC2 /* InspectorAIUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = InspectorAIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45A9538D2D5AF83900AF238E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F61E7F2D5603D700115BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A954B22D66CC3800AF238E /* AWSCloudWatchLoggingPlugin in Frameworks */,
+				45A954C42D66CC3800AF238E /* Amplify in Frameworks */,
+				45A954B02D66CC3800AF238E /* AWSAPIPlugin in Frameworks */,
+				45A954B82D66CC3800AF238E /* AWSLocationGeoPlugin in Frameworks */,
+				45A954C22D66CC3800AF238E /* AWSS3StoragePlugin in Frameworks */,
+				45A954C62D66CC3800AF238E /* CoreMLPredictionsPlugin in Frameworks */,
+				45F61EB32D5605FF00115BC2 /* CoreML.framework in Frameworks */,
+				456973DD2D66D1840063A328 /* ZIPFoundation in Frameworks */,
+				45A954BA2D66CC3800AF238E /* AWSPinpointAnalyticsPlugin in Frameworks */,
+				45F61EB52D56060C00115BC2 /* Vision.framework in Frameworks */,
+				45F61EB12D5605EB00115BC2 /* ARKit.framework in Frameworks */,
+				45A954BC2D66CC3800AF238E /* AWSPinpointPushNotificationsPlugin in Frameworks */,
+				45A954B42D66CC3800AF238E /* AWSCognitoAuthPlugin in Frameworks */,
+				45A954B62D66CC3800AF238E /* AWSDataStorePlugin in Frameworks */,
+				45A954C02D66CC3800AF238E /* AWSPredictionsPlugin in Frameworks */,
+				45A954BE2D66CC3800AF238E /* AWSPluginsCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F61E8F2D5603D900115BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F61E992D5603D900115BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45F61E792D5603D700115BC2 = {
+			isa = PBXGroup;
+			children = (
+				45F61E842D5603D700115BC2 /* InspectorAI */,
+				45F61E9F2D5603D900115BC2 /* InspectorAIUITests */,
+				45F61EAF2D5605EB00115BC2 /* Frameworks */,
+				45F61E832D5603D700115BC2 /* Products */,
+				E871989BEB2474D5231F7337 /* AmplifyConfig */,
+				72CCE1D14F9BF916E1444225 /* AmplifyModels */,
+			);
+			sourceTree = "<group>";
+		};
+		45F61E832D5603D700115BC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45F61E822D5603D700115BC2 /* InspectorAI.app */,
+				45F61E922D5603D900115BC2 /* InspectorAITests.xctest */,
+				45F61E9C2D5603D900115BC2 /* InspectorAIUITests.xctest */,
+				45A953902D5AF83900AF238E /* InspectorAITest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45F61EAF2D5605EB00115BC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45F61EB42D56060C00115BC2 /* Vision.framework */,
+				45F61EB22D5605FF00115BC2 /* CoreML.framework */,
+				45F61EB02D5605EB00115BC2 /* ARKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72CCE1D14F9BF916E1444225 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				8E74699B13CD0C46071DFE2A /* AmplifyModels.swift */,
+				A4C0103692D27784CC35F205 /* ChatLog+Schema.swift */,
+				3A524792C760D606EA2D5F04 /* ChatLog.swift */,
+				633AA0CC095BA285AD04B307 /* Message+Schema.swift */,
+				B312598AA162D87AA58D6C95 /* Message.swift */,
+				6BC47B62548406DF394B2235 /* Project+Schema.swift */,
+				886ECCB584F81AB412301446 /* Project.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
+		E871989BEB2474D5231F7337 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				3ADEA54ADF702B188BE13626 /* awsconfiguration.json */,
+				CD42A4AC9278635017E8FD2C /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45A9538F2D5AF83900AF238E /* InspectorAITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45A953962D5AF83900AF238E /* Build configuration list for PBXNativeTarget "InspectorAITest" */;
+			buildPhases = (
+				45A9538C2D5AF83900AF238E /* Sources */,
+				45A9538D2D5AF83900AF238E /* Frameworks */,
+				45A9538E2D5AF83900AF238E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45A953952D5AF83900AF238E /* PBXTargetDependency */,
+			);
+			name = InspectorAITest;
+			packageProductDependencies = (
+			);
+			productName = InspectorAITest;
+			productReference = 45A953902D5AF83900AF238E /* InspectorAITest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45F61E812D5603D700115BC2 /* InspectorAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45F61EA62D5603D900115BC2 /* Build configuration list for PBXNativeTarget "InspectorAI" */;
+			buildPhases = (
+				45F61E7E2D5603D700115BC2 /* Sources */,
+				45F61E7F2D5603D700115BC2 /* Frameworks */,
+				45F61E802D5603D700115BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				45F61E842D5603D700115BC2 /* InspectorAI */,
+			);
+			name = InspectorAI;
+			packageProductDependencies = (
+				45A954AF2D66CC3800AF238E /* AWSAPIPlugin */,
+				45A954B12D66CC3800AF238E /* AWSCloudWatchLoggingPlugin */,
+				45A954B32D66CC3800AF238E /* AWSCognitoAuthPlugin */,
+				45A954B52D66CC3800AF238E /* AWSDataStorePlugin */,
+				45A954B72D66CC3800AF238E /* AWSLocationGeoPlugin */,
+				45A954B92D66CC3800AF238E /* AWSPinpointAnalyticsPlugin */,
+				45A954BB2D66CC3800AF238E /* AWSPinpointPushNotificationsPlugin */,
+				45A954BD2D66CC3800AF238E /* AWSPluginsCore */,
+				45A954BF2D66CC3800AF238E /* AWSPredictionsPlugin */,
+				45A954C12D66CC3800AF238E /* AWSS3StoragePlugin */,
+				45A954C32D66CC3800AF238E /* Amplify */,
+				45A954C52D66CC3800AF238E /* CoreMLPredictionsPlugin */,
+				456973DC2D66D1840063A328 /* ZIPFoundation */,
+			);
+			productName = InspectorAI;
+			productReference = 45F61E822D5603D700115BC2 /* InspectorAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45F61E912D5603D900115BC2 /* InspectorAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45F61EA92D5603D900115BC2 /* Build configuration list for PBXNativeTarget "InspectorAITests" */;
+			buildPhases = (
+				45F61E8E2D5603D900115BC2 /* Sources */,
+				45F61E8F2D5603D900115BC2 /* Frameworks */,
+				45F61E902D5603D900115BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45F61E942D5603D900115BC2 /* PBXTargetDependency */,
+			);
+			name = InspectorAITests;
+			packageProductDependencies = (
+			);
+			productName = InspectorAITests;
+			productReference = 45F61E922D5603D900115BC2 /* InspectorAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45F61E9B2D5603D900115BC2 /* InspectorAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45F61EAC2D5603D900115BC2 /* Build configuration list for PBXNativeTarget "InspectorAIUITests" */;
+			buildPhases = (
+				45F61E982D5603D900115BC2 /* Sources */,
+				45F61E992D5603D900115BC2 /* Frameworks */,
+				45F61E9A2D5603D900115BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45F61E9E2D5603D900115BC2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				45F61E9F2D5603D900115BC2 /* InspectorAIUITests */,
+			);
+			name = InspectorAIUITests;
+			packageProductDependencies = (
+			);
+			productName = InspectorAIUITests;
+			productReference = 45F61E9C2D5603D900115BC2 /* InspectorAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45F61E7A2D5603D700115BC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					45A9538F2D5AF83900AF238E = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 45F61E812D5603D700115BC2;
+					};
+					45F61E812D5603D700115BC2 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					45F61E912D5603D900115BC2 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 45F61E812D5603D700115BC2;
+					};
+					45F61E9B2D5603D900115BC2 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 45F61E812D5603D700115BC2;
+					};
+				};
+			};
+			buildConfigurationList = 45F61E7D2D5603D700115BC2 /* Build configuration list for PBXProject "InspectorAI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45F61E792D5603D700115BC2;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */,
+				456973DB2D66D1840063A328 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 45F61E832D5603D700115BC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45F61E812D5603D700115BC2 /* InspectorAI */,
+				45F61E912D5603D900115BC2 /* InspectorAITests */,
+				45F61E9B2D5603D900115BC2 /* InspectorAIUITests */,
+				45A9538F2D5AF83900AF238E /* InspectorAITest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45A9538E2D5AF83900AF238E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F61E802D5603D700115BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C7C36DB87DFCE1D2ACC996 /* awsconfiguration.json in Resources */,
+				8DCFCB6E89A512C2EC898A2C /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F61E902D5603D900115BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F61E9A2D5603D900115BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45A9538C2D5AF83900AF238E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F61E7E2D5603D700115BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83F7FEB6426CFAB1FD978CD /* AmplifyModels.swift in Sources */,
+				B8F007DB639E4832B5626B53 /* ChatLog+Schema.swift in Sources */,
+				C7550FD7CDAC0A6264BA5CC7 /* ChatLog.swift in Sources */,
+				93585DBFAFE7892FD674FC39 /* Message+Schema.swift in Sources */,
+				F0FECE21AA803EE09F62B273 /* Message.swift in Sources */,
+				E493FEEBB55EC3FFB36E2A6B /* Project+Schema.swift in Sources */,
+				ABD8C19B72E121138506FE18 /* Project.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F61E8E2D5603D900115BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F61E982D5603D900115BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45A953952D5AF83900AF238E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45F61E812D5603D700115BC2 /* InspectorAI */;
+			targetProxy = 45A953942D5AF83900AF238E /* PBXContainerItemProxy */;
+		};
+		45F61E942D5603D900115BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45F61E812D5603D700115BC2 /* InspectorAI */;
+			targetProxy = 45F61E932D5603D900115BC2 /* PBXContainerItemProxy */;
+		};
+		45F61E9E2D5603D900115BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45F61E812D5603D700115BC2 /* InspectorAI */;
+			targetProxy = 45F61E9D2D5603D900115BC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		45A953972D5AF83900AF238E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23C3M6NLZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irisainc.InspectorAITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InspectorAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InspectorAI";
+			};
+			name = Debug;
+		};
+		45A953982D5AF83900AF238E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23C3M6NLZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irisainc.InspectorAITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InspectorAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InspectorAI";
+			};
+			name = Release;
+		};
+		45F61EA42D5603D900115BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45F61EA52D5603D900115BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45F61EA72D5603D900115BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InspectorAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 23C3M6NLZ8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリでは道路標識の撮影のためにカメラを使用します。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "点検現場の位置情報取得のために位置情報を使用します。";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "このアプリでは、〇〇のためにマイクを使用します。";
+				INFOPLIST_KEY_NSMotionUsageDescription = "AR体験および標識の詳細測定のため、デバイスの加速度・ジャイロセンサーを使用します。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irisainc.InspectorAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45F61EA82D5603D900115BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InspectorAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 23C3M6NLZ8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリでは道路標識の撮影のためにカメラを使用します。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "点検現場の位置情報取得のために位置情報を使用します。";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "このアプリでは、〇〇のためにマイクを使用します。";
+				INFOPLIST_KEY_NSMotionUsageDescription = "AR体験および標識の詳細測定のため、デバイスの加速度・ジャイロセンサーを使用します。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irisainc.InspectorAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		45F61EAA2D5603D900115BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23C3M6NLZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irisainc.InspectorAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InspectorAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InspectorAI";
+			};
+			name = Debug;
+		};
+		45F61EAB2D5603D900115BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23C3M6NLZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irisainc.InspectorAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InspectorAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InspectorAI";
+			};
+			name = Release;
+		};
+		45F61EAD2D5603D900115BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23C3M6NLZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irisainc.InspectorAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InspectorAI;
+			};
+			name = Debug;
+		};
+		45F61EAE2D5603D900115BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23C3M6NLZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irisainc.InspectorAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InspectorAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45A953962D5AF83900AF238E /* Build configuration list for PBXNativeTarget "InspectorAITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A953972D5AF83900AF238E /* Debug */,
+				45A953982D5AF83900AF238E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45F61E7D2D5603D700115BC2 /* Build configuration list for PBXProject "InspectorAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45F61EA42D5603D900115BC2 /* Debug */,
+				45F61EA52D5603D900115BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45F61EA62D5603D900115BC2 /* Build configuration list for PBXNativeTarget "InspectorAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45F61EA72D5603D900115BC2 /* Debug */,
+				45F61EA82D5603D900115BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45F61EA92D5603D900115BC2 /* Build configuration list for PBXNativeTarget "InspectorAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45F61EAA2D5603D900115BC2 /* Debug */,
+				45F61EAB2D5603D900115BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45F61EAC2D5603D900115BC2 /* Build configuration list for PBXNativeTarget "InspectorAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45F61EAD2D5603D900115BC2 /* Debug */,
+				45F61EAE2D5603D900115BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		456973DB2D66D1840063A328 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+		45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.45.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		456973DC2D66D1840063A328 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 456973DB2D66D1840063A328 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		45A954AF2D66CC3800AF238E /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		45A954B12D66CC3800AF238E /* AWSCloudWatchLoggingPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCloudWatchLoggingPlugin;
+		};
+		45A954B32D66CC3800AF238E /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		45A954B52D66CC3800AF238E /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSDataStorePlugin;
+		};
+		45A954B72D66CC3800AF238E /* AWSLocationGeoPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSLocationGeoPlugin;
+		};
+		45A954B92D66CC3800AF238E /* AWSPinpointAnalyticsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSPinpointAnalyticsPlugin;
+		};
+		45A954BB2D66CC3800AF238E /* AWSPinpointPushNotificationsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSPinpointPushNotificationsPlugin;
+		};
+		45A954BD2D66CC3800AF238E /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSPluginsCore;
+		};
+		45A954BF2D66CC3800AF238E /* AWSPredictionsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSPredictionsPlugin;
+		};
+		45A954C12D66CC3800AF238E /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSS3StoragePlugin;
+		};
+		45A954C32D66CC3800AF238E /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+		45A954C52D66CC3800AF238E /* CoreMLPredictionsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A954AE2D66CC3800AF238E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = CoreMLPredictionsPlugin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 45F61E7A2D5603D700115BC2 /* Project object */;
+}

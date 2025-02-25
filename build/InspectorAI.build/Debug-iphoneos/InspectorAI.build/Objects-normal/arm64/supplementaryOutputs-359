@@ -1,0 +1,18 @@
+"/Users/fukutsukayamato/Desktop/InspectorAI/InspectorAI/S3Uploader.swift":
+  const-values: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/S3Uploader.swiftconstvalues"
+  object: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/S3Uploader.o"
+  swift-dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/S3Uploader.swiftdeps"
+  dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/S3Uploader.d"
+  diagnostics: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/S3Uploader.dia"
+"/Users/fukutsukayamato/Desktop/InspectorAI/InspectorAI/ProjectListView.swift":
+  dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ProjectListView.d"
+  diagnostics: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ProjectListView.dia"
+  object: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ProjectListView.o"
+  swift-dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ProjectListView.swiftdeps"
+  const-values: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ProjectListView.swiftconstvalues"
+"/Users/fukutsukayamato/Desktop/InspectorAI/InspectorAI/ContentView.swift":
+  object: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ContentView.o"
+  const-values: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ContentView.swiftconstvalues"
+  swift-dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ContentView.swiftdeps"
+  diagnostics: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ContentView.dia"
+  dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ContentView.d"

@@ -1,0 +1,18 @@
+"/Users/fukutsukayamato/Desktop/InspectorAI/InspectorAI/ARRealityView.swift":
+  diagnostics: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ARRealityView.dia"
+  object: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ARRealityView.o"
+  dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ARRealityView.d"
+  const-values: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ARRealityView.swiftconstvalues"
+  swift-dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ARRealityView.swiftdeps"
+"/Users/fukutsukayamato/Desktop/InspectorAI/InspectorAI/DatabaseManager.swift":
+  dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/DatabaseManager.d"
+  swift-dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/DatabaseManager.swiftdeps"
+  const-values: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/DatabaseManager.swiftconstvalues"
+  object: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/DatabaseManager.o"
+  diagnostics: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/DatabaseManager.dia"
+"/Users/fukutsukayamato/Desktop/InspectorAI/InspectorAI/ChatMessage.swift":
+  const-values: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ChatMessage.swiftconstvalues"
+  object: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ChatMessage.o"
+  swift-dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ChatMessage.swiftdeps"
+  diagnostics: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ChatMessage.dia"
+  dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ChatMessage.d"

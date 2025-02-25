@@ -1,0 +1,94 @@
+{
+    "UserAgent": "aws-amplify-cli/2.0",
+    "Version": "1.0",
+    "api": {
+        "plugins": {
+            "awsAPIPlugin": {
+                "inspectorai": {
+                    "endpointType": "GraphQL",
+                    "endpoint": "https://rrur3s5zxbenpi2rgvrmr46pra.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+                    "region": "ap-northeast-1",
+                    "authorizationType": "API_KEY",
+                    "apiKey": "da2-ly2oc26ynzhkxfdzc4l2xypymm"
+                }
+            }
+        }
+    },
+    "auth": {
+        "plugins": {
+            "awsCognitoAuthPlugin": {
+                "UserAgent": "aws-amplify/cli",
+                "Version": "0.1.0",
+                "IdentityManager": {
+                    "Default": {}
+                },
+                "CredentialsProvider": {
+                    "CognitoIdentity": {
+                        "Default": {
+                            "PoolId": "ap-northeast-1:4c925431-ce54-49b3-974e-5bc1267ffa60",
+                            "Region": "ap-northeast-1"
+                        }
+                    }
+                },
+                "CognitoUserPool": {
+                    "Default": {
+                        "PoolId": "ap-northeast-1_20TN2w59r",
+                        "AppClientId": "3sn426f5muhrq618pk6papmuu0",
+                        "Region": "ap-northeast-1"
+                    }
+                },
+                "Auth": {
+                    "Default": {
+                        "authenticationFlowType": "USER_SRP_AUTH",
+                        "socialProviders": [],
+                        "usernameAttributes": [],
+                        "signupAttributes": [
+                            "EMAIL"
+                        ],
+                        "passwordProtectionSettings": {
+                            "passwordPolicyMinLength": 8,
+                            "passwordPolicyCharacters": []
+                        },
+                        "mfaConfiguration": "OFF",
+                        "mfaTypes": [
+                            "SMS"
+                        ],
+                        "verificationMechanisms": [
+                            "EMAIL"
+                        ]
+                    }
+                },
+                "AppSync": {
+                    "Default": {
+                        "ApiUrl": "https://rrur3s5zxbenpi2rgvrmr46pra.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+                        "Region": "ap-northeast-1",
+                        "AuthMode": "API_KEY",
+                        "ApiKey": "da2-ly2oc26ynzhkxfdzc4l2xypymm",
+                        "ClientDatabasePrefix": "inspectorai_API_KEY"
+                    },
+                    "inspectorai_AMAZON_COGNITO_USER_POOLS": {
+                        "ApiUrl": "https://rrur3s5zxbenpi2rgvrmr46pra.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+                        "Region": "ap-northeast-1",
+                        "AuthMode": "AMAZON_COGNITO_USER_POOLS",
+                        "ClientDatabasePrefix": "inspectorai_AMAZON_COGNITO_USER_POOLS"
+                    }
+                },
+                "S3TransferUtility": {
+                    "Default": {
+                        "Bucket": "inspectorai-bucketad97b-dev",
+                        "Region": "ap-northeast-1"
+                    }
+                }
+            }
+        }
+    },
+    "storage": {
+        "plugins": {
+            "awsS3StoragePlugin": {
+                "bucket": "inspectorai-bucketad97b-dev",
+                "region": "ap-northeast-1",
+                "defaultAccessLevel": "guest"
+            }
+        }
+    }
+}

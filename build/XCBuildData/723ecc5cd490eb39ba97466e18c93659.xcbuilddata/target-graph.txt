@@ -1,0 +1,8 @@
+Target dependency graph (4 targets)
+Target 'InspectorAIUITests' in project 'InspectorAI'
+➜ Explicit dependency on target 'InspectorAI' in project 'InspectorAI'
+Target 'InspectorAITests' in project 'InspectorAI'
+➜ Explicit dependency on target 'InspectorAI' in project 'InspectorAI'
+Target 'InspectorAITest' in project 'InspectorAI'
+➜ Explicit dependency on target 'InspectorAI' in project 'InspectorAI'
+Target 'InspectorAI' in project 'InspectorAI' (no dependencies)

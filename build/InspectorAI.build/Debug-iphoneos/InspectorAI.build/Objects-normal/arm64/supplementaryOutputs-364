@@ -1,0 +1,18 @@
+"/Users/fukutsukayamato/Desktop/InspectorAI/InspectorAI/ReportGenerator.swift .swift":
+  const-values: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ReportGenerator.swift .swiftconstvalues"
+  diagnostics: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ReportGenerator.swift .dia"
+  dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ReportGenerator.swift .d"
+  object: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ReportGenerator.swift .o"
+  swift-dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ReportGenerator.swift .swiftdeps"
+"/Users/fukutsukayamato/Desktop/InspectorAI/InspectorAI/MeshReconstruction.swift":
+  swift-dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/MeshReconstruction.swiftdeps"
+  diagnostics: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/MeshReconstruction.dia"
+  object: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/MeshReconstruction.o"
+  const-values: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/MeshReconstruction.swiftconstvalues"
+  dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/MeshReconstruction.d"
+"/Users/fukutsukayamato/Desktop/InspectorAI/InspectorAI/ARInspectionView.swift":
+  diagnostics: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ARInspectionView.dia"
+  dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ARInspectionView.d"
+  object: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ARInspectionView.o"
+  const-values: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ARInspectionView.swiftconstvalues"
+  swift-dependencies: "/Users/fukutsukayamato/Desktop/InspectorAI/build/InspectorAI.build/Debug-iphoneos/InspectorAI.build/Objects-normal/arm64/ARInspectionView.swiftdeps"

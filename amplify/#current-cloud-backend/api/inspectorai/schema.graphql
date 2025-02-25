@@ -1,0 +1,17 @@
+# schema.graphql
+type Project @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  name: String!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type Message @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  content: String!
+  isFromUser: Boolean!
+  projectID: ID!     # ProjectのIDを紐づけ
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+

@@ -1,0 +1,109 @@
+# this is an auto generated file. This will be overwritten
+
+subscription OnCreateProject(
+  $filter: ModelSubscriptionProjectFilterInput
+  $owner: String
+) {
+  onCreateProject(filter: $filter, owner: $owner) {
+    id
+    name
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    owner
+    __typename
+  }
+}
+
+subscription OnUpdateProject(
+  $filter: ModelSubscriptionProjectFilterInput
+  $owner: String
+) {
+  onUpdateProject(filter: $filter, owner: $owner) {
+    id
+    name
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    owner
+    __typename
+  }
+}
+
+subscription OnDeleteProject(
+  $filter: ModelSubscriptionProjectFilterInput
+  $owner: String
+) {
+  onDeleteProject(filter: $filter, owner: $owner) {
+    id
+    name
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    owner
+    __typename
+  }
+}
+
+subscription OnCreateMessage(
+  $filter: ModelSubscriptionMessageFilterInput
+  $owner: String
+) {
+  onCreateMessage(filter: $filter, owner: $owner) {
+    id
+    content
+    isFromUser
+    projectID
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    owner
+    __typename
+  }
+}
+
+subscription OnUpdateMessage(
+  $filter: ModelSubscriptionMessageFilterInput
+  $owner: String
+) {
+  onUpdateMessage(filter: $filter, owner: $owner) {
+    id
+    content
+    isFromUser
+    projectID
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    owner
+    __typename
+  }
+}
+
+subscription OnDeleteMessage(
+  $filter: ModelSubscriptionMessageFilterInput
+  $owner: String
+) {
+  onDeleteMessage(filter: $filter, owner: $owner) {
+    id
+    content
+    isFromUser
+    projectID
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    owner
+    __typename
+  }
+}

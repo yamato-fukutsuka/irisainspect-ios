@@ -1,0 +1,332 @@
+type Project @aws_cognito_user_pools {
+  id: ID!
+  name: String!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  _version: Int!
+  _deleted: Boolean
+  _lastChangedAt: AWSTimestamp!
+  owner: String
+}
+
+type Message @aws_cognito_user_pools {
+  id: ID!
+  content: String!
+  isFromUser: Boolean!
+  projectID: ID!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  _version: Int!
+  _deleted: Boolean
+  _lastChangedAt: AWSTimestamp!
+  owner: String
+}
+
+input ModelStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelBooleanInput {
+  ne: Boolean
+  eq: Boolean
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelSubscriptionStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  in: [String]
+  notIn: [String]
+}
+
+input ModelSubscriptionIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  in: [Int]
+  notIn: [Int]
+}
+
+input ModelSubscriptionFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  in: [Float]
+  notIn: [Float]
+}
+
+input ModelSubscriptionBooleanInput {
+  ne: Boolean
+  eq: Boolean
+}
+
+input ModelSubscriptionIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  in: [ID]
+  notIn: [ID]
+}
+
+enum ModelAttributeTypes {
+  binary
+  binarySet
+  bool
+  list
+  map
+  number
+  numberSet
+  string
+  stringSet
+  _null
+}
+
+input ModelSizeInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelProjectConnection @aws_cognito_user_pools {
+  items: [Project]!
+  nextToken: String
+  startedAt: AWSTimestamp
+}
+
+input ModelProjectFilterInput {
+  id: ModelIDInput
+  name: ModelStringInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  and: [ModelProjectFilterInput]
+  or: [ModelProjectFilterInput]
+  not: ModelProjectFilterInput
+  _deleted: ModelBooleanInput
+  owner: ModelStringInput
+}
+
+type Query {
+  getProject(id: ID!): Project @aws_cognito_user_pools
+  listProjects(filter: ModelProjectFilterInput, limit: Int, nextToken: String): ModelProjectConnection @aws_cognito_user_pools
+  syncProjects(filter: ModelProjectFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModelProjectConnection @aws_cognito_user_pools
+  getMessage(id: ID!): Message @aws_cognito_user_pools
+  listMessages(filter: ModelMessageFilterInput, limit: Int, nextToken: String): ModelMessageConnection @aws_cognito_user_pools
+  syncMessages(filter: ModelMessageFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModelMessageConnection @aws_cognito_user_pools
+}
+
+input ModelProjectConditionInput {
+  name: ModelStringInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  and: [ModelProjectConditionInput]
+  or: [ModelProjectConditionInput]
+  not: ModelProjectConditionInput
+  _deleted: ModelBooleanInput
+  owner: ModelStringInput
+}
+
+input CreateProjectInput {
+  id: ID
+  name: String!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  _version: Int
+}
+
+input UpdateProjectInput {
+  id: ID!
+  name: String
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  _version: Int
+}
+
+input DeleteProjectInput {
+  id: ID!
+  _version: Int
+}
+
+type Mutation {
+  createProject(input: CreateProjectInput!, condition: ModelProjectConditionInput): Project @aws_cognito_user_pools
+  updateProject(input: UpdateProjectInput!, condition: ModelProjectConditionInput): Project @aws_cognito_user_pools
+  deleteProject(input: DeleteProjectInput!, condition: ModelProjectConditionInput): Project @aws_cognito_user_pools
+  createMessage(input: CreateMessageInput!, condition: ModelMessageConditionInput): Message @aws_cognito_user_pools
+  updateMessage(input: UpdateMessageInput!, condition: ModelMessageConditionInput): Message @aws_cognito_user_pools
+  deleteMessage(input: DeleteMessageInput!, condition: ModelMessageConditionInput): Message @aws_cognito_user_pools
+}
+
+input ModelSubscriptionProjectFilterInput {
+  id: ModelSubscriptionIDInput
+  name: ModelSubscriptionStringInput
+  createdAt: ModelSubscriptionStringInput
+  updatedAt: ModelSubscriptionStringInput
+  and: [ModelSubscriptionProjectFilterInput]
+  or: [ModelSubscriptionProjectFilterInput]
+  _deleted: ModelBooleanInput
+  owner: ModelStringInput
+}
+
+type Subscription {
+  onCreateProject(filter: ModelSubscriptionProjectFilterInput, owner: String): Project @aws_subscribe(mutations: ["createProject"]) @aws_cognito_user_pools
+  onUpdateProject(filter: ModelSubscriptionProjectFilterInput, owner: String): Project @aws_subscribe(mutations: ["updateProject"]) @aws_cognito_user_pools
+  onDeleteProject(filter: ModelSubscriptionProjectFilterInput, owner: String): Project @aws_subscribe(mutations: ["deleteProject"]) @aws_cognito_user_pools
+  onCreateMessage(filter: ModelSubscriptionMessageFilterInput, owner: String): Message @aws_subscribe(mutations: ["createMessage"]) @aws_cognito_user_pools
+  onUpdateMessage(filter: ModelSubscriptionMessageFilterInput, owner: String): Message @aws_subscribe(mutations: ["updateMessage"]) @aws_cognito_user_pools
+  onDeleteMessage(filter: ModelSubscriptionMessageFilterInput, owner: String): Message @aws_subscribe(mutations: ["deleteMessage"]) @aws_cognito_user_pools
+}
+
+type ModelMessageConnection @aws_cognito_user_pools {
+  items: [Message]!
+  nextToken: String
+  startedAt: AWSTimestamp
+}
+
+input ModelMessageFilterInput {
+  id: ModelIDInput
+  content: ModelStringInput
+  isFromUser: ModelBooleanInput
+  projectID: ModelIDInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  and: [ModelMessageFilterInput]
+  or: [ModelMessageFilterInput]
+  not: ModelMessageFilterInput
+  _deleted: ModelBooleanInput
+  owner: ModelStringInput
+}
+
+input ModelMessageConditionInput {
+  content: ModelStringInput
+  isFromUser: ModelBooleanInput
+  projectID: ModelIDInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  and: [ModelMessageConditionInput]
+  or: [ModelMessageConditionInput]
+  not: ModelMessageConditionInput
+  _deleted: ModelBooleanInput
+  owner: ModelStringInput
+}
+
+input CreateMessageInput {
+  id: ID
+  content: String!
+  isFromUser: Boolean!
+  projectID: ID!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  _version: Int
+}
+
+input UpdateMessageInput {
+  id: ID!
+  content: String
+  isFromUser: Boolean
+  projectID: ID
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  _version: Int
+}
+
+input DeleteMessageInput {
+  id: ID!
+  _version: Int
+}
+
+input ModelSubscriptionMessageFilterInput {
+  id: ModelSubscriptionIDInput
+  content: ModelSubscriptionStringInput
+  isFromUser: ModelSubscriptionBooleanInput
+  projectID: ModelSubscriptionIDInput
+  createdAt: ModelSubscriptionStringInput
+  updatedAt: ModelSubscriptionStringInput
+  and: [ModelSubscriptionMessageFilterInput]
+  or: [ModelSubscriptionMessageFilterInput]
+  _deleted: ModelBooleanInput
+  owner: ModelStringInput
+}

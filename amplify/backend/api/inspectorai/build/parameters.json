@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "inspectorai",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authinspectorai0d687996",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-inspectorai-dev-ad97b-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/4450f942c5eb98be68031b0902d0ec886546a2d3"
+}

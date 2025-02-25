@@ -1,0 +1,18 @@
+type Project @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  name: String!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type Message @model
+  @auth(rules: [{ allow: owner, ownerField: "owner", identityClaim: "cognito:username" }]) {
+  id: ID!
+  content: String!
+  isFromUser: Boolean!
+  projectID: ID!     # ProjectのIDを紐づけ
+  owner: String      # 追加: 認証ルールで使用するオーナー情報
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+

@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-inspectorai-dev-ad97b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::794038225687:role/amplify-inspectorai-dev-ad97b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::794038225687:role/amplify-inspectorai-dev-ad97b-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-inspectorai-dev-ad97b-deployment",
+      "UnauthRoleName": "amplify-inspectorai-dev-ad97b-unauthRole",
+      "StackName": "amplify-inspectorai-dev-ad97b",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:794038225687:stack/amplify-inspectorai-dev-ad97b/e5b8c1c0-ef44-11ef-9d7a-0e9c4d8e0beb",
+      "AmplifyAppId": "dwovx2hj6n34i"
+    },
+    "categories": {
+      "auth": {
+        "inspectorai0d687996": {}
+      },
+      "api": {
+        "inspectorai": {}
+      },
+      "storage": {
+        "InspectorAIContent": {}
+      }
+    }
+  }
+}

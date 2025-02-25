@@ -1,0 +1,14 @@
+{
+  "resourceName": "InspectorAIContent",
+  "policyUUID": "e909a138",
+  "bucketName": "inspectorai-bucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

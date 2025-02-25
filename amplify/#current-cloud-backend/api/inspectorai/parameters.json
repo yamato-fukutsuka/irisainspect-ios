@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "inspectorai",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authinspectorai0d687996",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
